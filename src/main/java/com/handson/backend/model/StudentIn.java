@@ -25,14 +25,14 @@ public class StudentIn implements Serializable {
 
 
     public Student toStudent() {
-        return Student.builder().createdAt(new Date()).fullname(fullname)
+        return Student.builder().createdAt(new Date()).fullName(fullname)
                 .satScore(satScore).graduationScore(graduationScore)
                 .phone(phone)
                 .build();
     }
 
     public void updateStudent(Student student) {
-        student.setFullname(fullname);
+        student.setFullName(fullname);
         student.setSatScore(satScore);
         student.setGraduationScore(graduationScore);
         student.setPhone(phone);
